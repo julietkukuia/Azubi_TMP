@@ -96,7 +96,7 @@ if st.button("Predict Subscription"):
 
 # Save to file
 app_path = "xgboost_app_clean.py"
-with open(app_file_path, "w", encoding="utf-8") as f:
-    f.write(app_code_dropdowns)
+with open(app_path, "w", encoding="utf-8") as f:
+    f.write(app_code)
 
 app_path
