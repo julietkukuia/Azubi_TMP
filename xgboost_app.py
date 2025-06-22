@@ -30,6 +30,8 @@ for feature in feature_order:
         user_inputs[feature] = st.number_input('Employment Variation Rate', -5.0, 2.0, 1.1, key=feature)
     elif 'contact' in feature:
         user_inputs[feature] = st.radio("Contact Type", [0, 1], key=feature)
+    elif feature in ['default', 'housing', 'loan']:
+        user_inputs[feature] = st.radio(f"{feature.capitalize()} (Has {feature}?)", [0, 1], key=feature)
     else:
         user_inputs[feature] = st.number_input(feature, value=0.0, key=feature)
 
