@@ -1,5 +1,5 @@
 # Full Streamlit app script with dropdowns and internal one-hot encoding based on user selections
-app_code_dropdowns = '''
+app_code = '''
 import streamlit as st
 import joblib
 import pandas as pd
@@ -95,8 +95,8 @@ if st.button("Predict Subscription"):
 '''
 
 # Save to file
-app_file_path = "/mnt/data/xgboost_app_clean.py"
+app_path = "xgboost_app_clean.py"
 with open(app_file_path, "w", encoding="utf-8") as f:
     f.write(app_code_dropdowns)
 
-app_file_path
+app_path
