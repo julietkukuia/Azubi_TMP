@@ -10,7 +10,7 @@ model = joblib.load("xgb_subscription_model.pkl")
 feature_order = joblib.load("xgb_model_features.pkl")
 
 st.set_page_config(page_title="Term Deposit Predictor", layout="centered")
-st.title("💼 Term Deposit Subscription Predictor")
+st.title("💼 📊Term Deposit Subscription Predictor💵")
 
 st.markdown("Provide client details below. The model will predict whether the client is likely to subscribe to a term deposit.")
 
